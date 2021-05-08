@@ -1,0 +1,105 @@
+.App {
+  text-align: left;
+  margin:0;
+  padding:0px;
+  height: 100vh;
+}
+
+.background{
+  background: #333 url(assets/g-salad.jpg) center center no-repeat;
+  background-size: cover;
+  color: #532827;
+  background-position: 50% 50%;
+  background-attachment: fixed;
+  height: 100%;
+  width: 100vw;
+  margin:0;
+}
+
+.container {
+  width: 400px;
+  margin: 40px auto 0;
+  padding: 50px;
+  box-sizing: border-box;
+  box-shadow: 0 10px 15px -8px #000;
+  border-radius: 5px;
+  text-align: center;
+  display: block;
+  background-color: white;
+}
+
+h1 {
+  margin: 0 0 20px;
+  padding: 0 0 20px;
+  border-bottom: solid 1px #ddd;
+}
+
+
+form {
+  text-align: left;
+}
+
+form label {
+  display: block;
+  margin: 25px 0;
+  font-weight: bold;
+}
+
+form input,
+form select {
+  padding: 8px;
+  margin: 10px 15px;
+}
+
+form input[type="text"] {
+  width: 101px;
+}
+
+button {
+  background: #6c2736;
+  color: navajowhite;
+  border: none;
+  border-bottom: solid  4px #222;
+  text-transform: uppercase;
+  font-size: 18px;
+  padding: 20px 30px;
+  width: 100%;
+}
+
+button:hover {
+  background: #4c2823;
+  border-bottom-color: #111;
+}
+
+button:active {
+  position: relative;
+  top: 1px;
+}
+
+.noDisplayTotal, .noDisplaySmall{
+  display: none;
+}
+
+.total {
+    font-size: 45px;
+    margin: 40px;
+}
+
+.total:before {
+    content: "Tip amount";
+    font-size: 14px;
+    font-weight: bold;
+    display: block;
+    text-transform: uppercase;
+}
+
+.total sup {
+    font-size: 24px;
+    top: -18px;
+}
+
+.total .small {
+    font-size: 14px;
+    font-weight: bold;
+    display: block;
+}
