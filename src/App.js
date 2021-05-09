@@ -1,5 +1,6 @@
 import {useState} from 'react';
 import swal from 'sweetalert';
+import Form from './Components/Form'
 import './App.css';
 
 function App() {
@@ -47,31 +48,13 @@ function App() {
     <div className="App">
       <div className="background">
         <br/>
-      <form className="container">
-        <h1>Gratuity Calculator</h1>
-        <label>
-          Bill total:
-          <input value = {totalState} onChange={setBillTerm}/>
-        </label>
-
-        <label>
-          Party size:
-          <input value={partySize} onChange={setPartyTerm}/>
-        </label>
-
-        <label>
-        How was your service?
-                    <select onChange={setServiceTerm}>
-                        <option disabled selected value="0">-- Choose an option--</option>
-                        <option value="0.03">Amazing</option>
-                        <option value="0.02">Good</option>
-                        <option value="0.015">Fair</option>
-                        <option value="0.01">Bad</option>
-                    </select>
-        </label>
-
-        <button type="submit" onClick={calculateTip}>Calculate</button>
-        </form>
+        <Form billValue = {totalState} 
+        billChange = {setBillTerm}
+        partySize = {partySize}
+        sizeChange={setPartyTerm}
+        serviceChange = {setServiceTerm}
+        clicked = {calculateTip}
+        />
     </div>
     </div>
   );
