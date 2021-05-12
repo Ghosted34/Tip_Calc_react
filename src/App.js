@@ -8,8 +8,7 @@ function App() {
   const[totalState, setTotalState] = useState("");
   const[serviceState, setServiceState] = useState(0)
   const[partySize, setPartySize] = useState("")
-  const[totalTip, setTotalTip] = useState(0)
-  const[tipPerson, setTipPerson] = useState(0)
+ 
 
   const setBillTerm = (event) =>{
       setTotalState(event.target.value)
@@ -37,9 +36,8 @@ function App() {
     }
     let tipTotal = parseFloat(totalState * serviceState).toFixed(2)
     let tipHuman = parseFloat(tipTotal/partySize).toFixed(2)
-    setTotalTip(tipTotal)
-    setTipPerson(tipHuman)
-    swal("Done!", `Total tip is: ${totalTip} ; Tip per person: ${tipPerson} `, "success")
+    
+    swal("Done!", `Total tip is: ${tipTotal} ; Tip per person: ${tipHuman} `, "success")
     
   }
 
