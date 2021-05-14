@@ -35,7 +35,13 @@
   
   form input[type="number"] {
     width: 101px;
-    appearance: none;
+    -moz-appearance: textfield;
+  }
+
+  form input[type="number"]::-webkit-outer-spin-button,
+  form input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
   }
   
   button {
